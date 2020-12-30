@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid: [header]"header header"100px 
+    [main]"nav main"2fr 
+    [footer]"footer footer"100px /[nav]20% [main]2fr;
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(38, 149, 71);
+}
+section
+{
+    grid-area: main;
+    background-color: aquamarine;
+}
+footer
+{
+    grid-area: footer;
+    background-color: aqua;
+}
+
+.message {
+    width: 70%;
+}
+
+@media (max-width: 600px) 
+{
+    body {
+        display: grid;
+        grid: [header]"header header"100px 
+        [main]"nav main"2fr 
+        [footer]"footer footer"100px 
+        /[main]2fr;
+    }
+    nav{
+        display: none;
+    }
+    .message{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:800px)
+{
+    .message
+    {
+        width: 90%;
+    }
+}
